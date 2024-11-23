@@ -5,8 +5,9 @@ import SkillList from "../../common/SkillList";
 import { useTheme } from "../../common/ThemeContext";
 
 const Skills = () => {
-    const {theme} = useTheme();
-    const checkMartIcon = theme === 'light' ? checkMartIconLight : checkMartIconDark;
+  const { theme } = useTheme();
+  const checkMartIcon =
+    theme === "light" ? checkMartIconLight : checkMartIconDark;
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
@@ -21,6 +22,7 @@ const Skills = () => {
       <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMartIcon} skill="React" />
+        <SkillList src={checkMartIcon} skill="Next" />
         <SkillList src={checkMartIcon} skill="Tailwind CSS" />
       </div>
       <hr />
@@ -29,8 +31,6 @@ const Skills = () => {
         <SkillList src={checkMartIcon} skill="Webpack" />
         <SkillList src={checkMartIcon} skill="GIT" />
       </div>
-      <hr />
-      
     </section>
   );
 };
