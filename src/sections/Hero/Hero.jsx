@@ -15,6 +15,7 @@ function Hero() {
   const themeIcon = theme === 'light' ? sun : moon;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
+  
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorNodeContainer}>

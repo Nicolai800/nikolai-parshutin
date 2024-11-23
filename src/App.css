@@ -2,7 +2,7 @@
   --background-color: #fff;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
-  --project-card-bg: #ffffff00;
+  --project-card-bg: #6aa5e520;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
@@ -11,7 +11,7 @@
   --background-color: #222;
   --btn-color: #fff;
   --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --project-card-bg: #fff3;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
@@ -67,6 +67,6 @@ p {
   margin-bottom: 30px;
 }
 
-.hover{
+.hover {
   cursor: pointer;
 }
