@@ -8,17 +8,23 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import CV from "../../assets/Nikolay_Parshutin_FrontEnd_CV.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import { motion } from "framer-motion";
 
 function Hero() {
-  const {theme, toggleTheme} = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  
+  const themeIcon = theme === "light" ? sun : moon;
+  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.colorNodeContainer}>
+      <motion.div
+        className={styles.colorNodeContainer}
+        initial={{ x: "100%", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <img
           className={styles.hero}
           src={heroImg}
@@ -30,8 +36,13 @@ function Hero() {
           alt="Color mode icon"
           onClick={toggleTheme}
         />
-      </div>
-      <div className={styles.info}>
+      </motion.div>
+      <motion.div
+        className={styles.info}
+        initial={{ x: "-100%", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h1>
           Nikolaj
           <br /> Parshutin
@@ -53,9 +64,9 @@ function Hero() {
           businesses
         </p>
         <a href={CV} download>
-          <button className = "hover">Resume</button>
+          <button className="hover">Resume</button>
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }
