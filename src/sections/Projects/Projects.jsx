@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./ProgectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
-import artKissDesignLogo from "../../assets/artKissLogo.png";
-import gardenLogo from "../../assets/gardenIcon.png";
-import pongGameLogo from "../../assets/machine.png";
+// import artKissDesignLogo from "../../assets/artKissLogo.png";
+// import gardenLogo from "../../assets/gardenIcon.png";
+// import pongGameLogo from "../../assets/machine.png";
+import projectsData from "../../data/projectsDataArray";
 
 const Projects = () => {
   return (
@@ -11,7 +12,16 @@ const Projects = () => {
       <section id="projects" className={styles.container}>
         <h1 className="sectionTitle">Projects</h1>
         <div className={styles.projectsContainer}>
-          <ProjectCard
+          {projectsData.map((project, index) => (
+            <ProjectCard
+              key={index}
+              src={project.src}
+              link={project.link}
+              title={project.title}
+              description={project.description}
+            />
+          ))}
+          {/* <ProjectCard
             src={artKissDesignLogo}
             link="https://artkissdesign.pl/"
             title="Art Kiss Design"
@@ -29,7 +39,7 @@ const Projects = () => {
             title="The Pong Game"
             description="JS,CSS,HTML(training project)"
             className={styles.machine}
-          />
+          /> */}
         </div>
       </section>
     </div>
