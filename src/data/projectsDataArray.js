@@ -1,6 +1,7 @@
 import artkissLogo from "../assets/artKissLogo.png";
 import gardenIcon from "../assets/gardenIcon.png";
 import machineImg from "../assets/machine.png";
+import todoListIcon from "../assets/to-do-list.png";
 
 const projectsData = [
   {
@@ -20,7 +21,12 @@ const projectsData = [
     link: "https://pong-game-p670.onrender.com",
     title: "The Pong Game",
     description: "JS, CSS, HTML (training project)",
-    className: "machine",
+  },
+  {
+    src: todoListIcon,
+    link: "https://todo-list-app-wfia.onrender.com/",
+    title: "To Do App",
+    description: "React, CSS, HTML (training project)",
   },
 ];
 
