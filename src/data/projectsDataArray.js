@@ -2,6 +2,7 @@ import artkissLogo from "../assets/artKissLogo.png";
 import gardenIcon from "../assets/gardenIcon.png";
 import machineImg from "../assets/machine.png";
 import todoListIcon from "../assets/to-do-list.png";
+import angularIcon from "../assets/angulatLogo.png";
 
 const projectsData = [
   {
@@ -27,6 +28,12 @@ const projectsData = [
     link: "https://todo-list-app-wfia.onrender.com/",
     title: "To Do App",
     description: "React, CSS, HTML (training project)",
+  },
+  {
+    src: angularIcon,
+    link: "https://angular-courses.onrender.com/",
+    title: "Angular Courses",
+    description: "Angular, RxJS, TypeScript (training project)",
   },
 ];
 

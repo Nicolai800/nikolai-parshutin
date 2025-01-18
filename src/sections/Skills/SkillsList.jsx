@@ -15,7 +15,7 @@ const Skills = () => {
         <SkillList src={checkMartIcon} skill="HTML" />
         <SkillList src={checkMartIcon} skill="CSS" />
         <SkillList src={checkMartIcon} skill="JavaScript" />
-        <SkillList src={checkMartIcon} skill="Basic TypeScript" />
+        <SkillList src={checkMartIcon} skill="TypeScript" />
         <SkillList src={checkMartIcon} skill="Basic Node" />
         <SkillList src={checkMartIcon} skill="WordPress" />
       </div>
