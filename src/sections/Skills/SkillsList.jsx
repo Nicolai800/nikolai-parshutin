@@ -22,11 +22,12 @@ const Skills = () => {
       <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMartIcon} skill="React" />
-        <SkillList src={checkMartIcon} skill="Next" />
+        <SkillList src={checkMartIcon} skill="Angular" />
         <SkillList src={checkMartIcon} skill="Tailwind CSS" />
       </div>
       <hr />
       <div className={styles.skillList}>
+        <SkillList src={checkMartIcon} skill="RxJS" />
         <SkillList src={checkMartIcon} skill="Redux" />
         <SkillList src={checkMartIcon} skill="Webpack" />
         <SkillList src={checkMartIcon} skill="GIT" />

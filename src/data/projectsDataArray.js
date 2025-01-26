@@ -3,6 +3,7 @@ import gardenIcon from "../assets/gardenIcon.png";
 import machineImg from "../assets/machine.png";
 import todoListIcon from "../assets/to-do-list.png";
 import angularIcon from "../assets/angulatLogo.png";
+import parkingIcon from "../assets/parking.png";
 
 const projectsData = [
   {
@@ -34,6 +35,12 @@ const projectsData = [
     link: "https://angular-courses.onrender.com/",
     title: "Angular Courses",
     description: "Angular, RxJS, TypeScript (training project)",
+  },
+  {
+    src: parkingIcon,
+    link: "https://parkingapp-z9g6.onrender.com",
+    title: "Parking App",
+    description: "Angular, RxJS, TypeScript, Bootstrap (training project)",
   },
 ];
 
