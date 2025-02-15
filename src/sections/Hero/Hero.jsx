@@ -6,7 +6,7 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import CV from "../../assets/Nikolay_Parshutin_FrontEnd_CV.pdf";
+import CV from "../../assets/CV_Front-end_Nicolai_Parshutin.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import { motion } from "framer-motion";
 
